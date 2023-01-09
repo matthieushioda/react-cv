@@ -60,9 +60,6 @@ function App(): React.ReactElement {
 	useEffect(() => {
 		dispatch(applicationSetLanguage(userPreferenceContext.locale));
 		dispatch(applicationSetPaletteMode(userPreferenceContext.paletteMode));
-		console.log(
-			`App from userPreferenceContext dispatch(applicationSetPaletteMode(${userPreferenceContext.paletteMode}))`
-		);
 
 		const navigationState = getNavigationStateFromStorage();
 		dispatch(navigationSetLinks(navigationState.navigationLinks));
