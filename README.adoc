@@ -1,0 +1,45 @@
+= Web Curriculum Vitae
+
+== 🥞 Technical stack
+
+Language:: Typescript 👉 https://www.typescriptlang.org
+
+Client:: React 👉 https://fr.reactjs.org/
+
+== 🛠 How to build
+
+Pre-requisite:: Install Node `16` 
+
+[TIP]
+====
+Use `nvm` to install and manage your node installations :
+
+* Mac/Linux 👉 https://github.com/nvm-sh/nvm
+* Windows 👉 https://github.com/coreybutler/nvm-windows
+====
+
+=== Client
+
+[source]
+----
+npm install
+npm run build
+----
+
+== 🚀 How to start
+
+=== Dev Mode
+
+.Start client 👉 http://localhost:3000
+[source]
+----
+npm start
+----
+
+=== How to debug on vscode
+
+Client side : 
+
+- Install `Debugger for Chrome` extension
+- Start client (`npm start`)
+- Run `DEBUG client` from debug configuration
