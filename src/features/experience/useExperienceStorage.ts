@@ -12,7 +12,7 @@ interface ExperienceState {
 
 /*region Initial state*/
 
-const initialCardExpandedState = true;
+const initialCardExpandedState = false;
 export const InitialExperienceState: ExperienceState = {
 	experienceCards: [
 		{
