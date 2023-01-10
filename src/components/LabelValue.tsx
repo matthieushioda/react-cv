@@ -5,7 +5,7 @@ import Grid, { GridSize } from "@mui/material/Grid";
 
 import { NoValue } from "../utils/Parameters";
 
-import OverflowableTypography from "./OverflowableTypography";
+import Typography from "./Typography";
 
 interface LabelValuePropsBase {
 	label: string;
@@ -41,9 +41,9 @@ function LabelValue({
 		<Box {...otherProps}>
 			<Grid container>
 				<Grid item xs={labelSize}>
-					<OverflowableTypography variant="formLabel" sx={{ marginRight: labelMargin }}>
+					<Typography variant="formLabel" sx={{ marginRight: labelMargin }}>
 						{label}
-					</OverflowableTypography>
+					</Typography>
 				</Grid>
 				<Grid item xs={valueSize}>
 					<Box
@@ -53,12 +53,12 @@ function LabelValue({
 					>
 						{isReactElement && value}
 						{!isReactElement && (
-							<OverflowableTypography
+							<Typography
 								variant="formValue"
 								sx={{ color: (theme) => valueBrush ?? theme.palette.common.black }}
 							>
 								{value?.toString() ?? NoValue}
-							</OverflowableTypography>
+							</Typography>
 						)}
 					</Box>
 				</Grid>

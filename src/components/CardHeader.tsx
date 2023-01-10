@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import { CardHeader as MuiCardHeader, Chip } from "@mui/material";
 
-import OverflowableTypography from "./OverflowableTypography";
+import Typography from "./Typography";
 
 export interface CardHeaderProps {
 	title: string;
@@ -12,9 +12,9 @@ function CardHeader({ ...props }: CardHeaderProps): React.ReactElement {
 	return (
 		<MuiCardHeader
 			title={
-				<OverflowableTypography variant="h6" color="text.title">
+				<Typography variant="h6" color="text.title">
 					{props.title}
-				</OverflowableTypography>
+				</Typography>
 			}
 			action={
 				props.chip && (

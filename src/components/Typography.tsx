@@ -1,14 +1,14 @@
 ﻿import React, { useState } from "react";
-import { Box, SxProps, Theme, Tooltip, Typography, TypographyProps } from "@mui/material";
+import { Box, SxProps, Theme, Tooltip, Typography as MuiTypography, TypographyProps } from "@mui/material";
 
-function OverflowableTypography(props: TypographyProps): React.ReactElement {
+function Typography(props: TypographyProps): React.ReactElement {
 	const [widthOverflowing, setOverflowing] = useState<number | undefined>(0);
 
 	const tooltipContent = (
 		<Box boxShadow={5} sx={{ backgroundColor: "common.white", width: `${widthOverflowing}px`, padding: 2 }}>
-			<Typography sx={{ color: "common.black" }} align="center">
+			<MuiTypography sx={{ color: "common.black" }} align="center">
 				{props.children}
-			</Typography>
+			</MuiTypography>
 		</Box>
 	);
 
@@ -30,14 +30,14 @@ function OverflowableTypography(props: TypographyProps): React.ReactElement {
 	};
 
 	const typography = (
-		<Typography
+		<MuiTypography
 			{...props}
 			sx={props.sx ? [sxOverflow, ...(Array.isArray(props.sx) ? props.sx : [props.sx])] : sxOverflow}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 		>
 			{props.children}
-		</Typography>
+		</MuiTypography>
 	);
 
 	return widthOverflowing ? (
@@ -49,4 +49,4 @@ function OverflowableTypography(props: TypographyProps): React.ReactElement {
 	);
 }
 
-export default OverflowableTypography;
+export default Typography;
