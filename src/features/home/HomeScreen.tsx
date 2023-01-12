@@ -21,7 +21,7 @@ export function HomeScreen(): React.ReactElement {
 		headers.append("Accept", "application/pdf");
 		headers.append("Content-Type", "application/pdf");
 
-		fetch(`/Cv_${locale}.pdf`, {
+		fetch(`public/Cv_${locale}.pdf`, {
 			headers: { "Content-Type": "application/pdf", Accept: "application/pdf" },
 		})
 			.then((response) => {
