@@ -42,9 +42,9 @@ export function HomeScreen(): React.ReactElement {
 				{t("curriculum_vitae.function")}
 			</Typography>
 			<Typography mt={theme.spacing(3)}>{t("curriculum_vitae.description")}</Typography>
-			<Button sx={{ marginTop: theme.spacing(4) }} onClick={handleDownloadCv}>
-				{t("curriculum_vitae.download")}
-			</Button>
+			{/*<Button sx={{ marginTop: theme.spacing(4) }} onClick={handleDownloadCv}>*/}
+			{/*	{t("curriculum_vitae.download")}*/}
+			{/*</Button>*/}
 		</Box>
 	);
 }
