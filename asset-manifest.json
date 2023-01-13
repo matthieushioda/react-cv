@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-cv/static/js/main.6dd1a138.js",
+    "main.js": "/react-cv/static/js/main.96ec098e.js",
     "index.html": "/react-cv/index.html",
-    "main.6dd1a138.js.map": "/react-cv/static/js/main.6dd1a138.js.map"
+    "main.96ec098e.js.map": "/react-cv/static/js/main.96ec098e.js.map"
   },
   "entrypoints": [
-    "static/js/main.6dd1a138.js"
+    "static/js/main.96ec098e.js"
   ]
 }
